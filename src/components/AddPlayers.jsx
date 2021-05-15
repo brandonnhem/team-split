@@ -16,15 +16,10 @@ function AddPlayers() {
         }
     }
 
-    // function removePlayer(newPlayer) {
-    //     // setPlayers(() => {
-    //     //     let index = players.indexOf(newPlayer);
-    //     //     if (index > -1) {
-    //     //         players.splice(index, 1);
-    //     //     }
-    //     // });
-    //     const newPlayers = players.filter(item => item.key !== newPlayer);
-    // }
+    function removePlayer(value) {
+        const newList = players.filter(item => item !== value);
+        setPlayers(newList);
+    }
 
     const [player, setPlayer] = useState('');
 
@@ -37,9 +32,8 @@ function AddPlayers() {
             </div>
             <div className="players">
                 {players.map((value, index) => {
-                    return <div key={index} className="player-card">
+                    return <div key={index} className="player-card" onClick={() => removePlayer(value)}>
                         {value}
-                        {/* <button className="close-btn" onClick={() => removePlayer(value)}>X</button> */}
                     </div>
                 })}
             </div>
