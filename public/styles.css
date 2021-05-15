@@ -140,10 +140,12 @@ input:focus {
     transition: 0.3s;
 }
 
-/* .close-btn {
-    background-color: #6e6dbb;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-} */
+.submit-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+}
