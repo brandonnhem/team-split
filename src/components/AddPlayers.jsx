@@ -27,11 +27,15 @@ function AddPlayers(props) {
 
     return (
         <div className="card center">
-            <h2>Players: </h2>
+            <h2>Enter Player(s): </h2>
             <div className="player-field">
+                {/* TODO: add option to press enter through keyboard to submit name */}
                 <input type="text" name="player" id="player" placeholder="Juju" value={player} onChange={e => setPlayer(e.target.value)}></input>
                 <button className="add-btn" onClick={() => addPlayer(player)}>+</button>
             </div>
+            {players.length >= 1 && 
+                <p>Tip: Press on a name to delete it.</p>
+            }
             <div className="players">
                 {players.map((value, index) => {
                     return <div key={index} className="player-card" onClick={() => removePlayer(value)}>
