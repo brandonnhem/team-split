@@ -9,7 +9,7 @@ Add up to 128 players and split them up into 64 possible random combinations wit
 
 ## How to Use
 
-Head on over to (INSERT WEBSITE LINK) before we begin.
+Head on over to [team-split](https://team-split.vercel.app/) before we begin.
 
 ### In the first box..
 1. Enter a player's name (up to 10 characters).
