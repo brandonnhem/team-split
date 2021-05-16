@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-function AddPlayers() {
+function AddPlayers(props) {
     const [players, setPlayers] = useState([]);
 
     function addPlayer(newPlayer) {
         if (!players.includes(newPlayer) && newPlayer !== '' && newPlayer.length <= 10 && players.length < 128) {
             setPlayers(prevArray => [...prevArray, newPlayer]);
             setPlayer('');
+            props.onSubmit(newPlayer);
         } else if (newPlayer === '') {
             alert('Field cannot be empty.');
         } else if (newPlayer.length > 10) {
@@ -19,6 +20,7 @@ function AddPlayers() {
     function removePlayer(value) {
         const newList = players.filter(item => item !== value);
         setPlayers(newList);
+        props.onRemoval(newList);
     }
 
     const [player, setPlayer] = useState('');
