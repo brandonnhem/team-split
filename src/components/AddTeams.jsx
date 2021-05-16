@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-function AddTeams() {
+function AddTeams(props) {
     const [teams, setTeams] = useState(2);
 
     function incrementCount() {
         if (teams + 1 <= 64) {
             setTeams(teams + 1);
+            props.onSubmit(teams);
         } else {
             alert('Teams cannot exceed 64');
         }
@@ -14,6 +15,7 @@ function AddTeams() {
     function decrementCount() {
         if (teams - 1 >= 2 ) {
             setTeams(teams - 1);
+            props.onSubmit(teams);
         } else {
             alert('Number of Teams must be minimum of 2');
         }
