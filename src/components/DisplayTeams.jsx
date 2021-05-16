@@ -11,10 +11,10 @@ function DisplayTeams(props) {
 
     return (
         <div className="card center team-list">
-            <h2>Teams</h2>
+            <h2>Final Team List</h2>
             {chunkTeams.map((value, index) => {
                 return <div key={ index } className="card">
-                    Team #{index + 1}
+                    <h3>Team #{index + 1}</h3>
                     {value.map((player, idx) => {
                         return <div key={idx} className="player-card">{player}</div>
                     })}
