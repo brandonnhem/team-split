@@ -21,12 +21,17 @@ function App() {
     function onPlayerRemoval(newList) {
         setFP(newList);
     }
+   
+    function handleGoBack(callback) {
+        setSubmit(callback.submit);
+        setFP(callback.prevTeams);
+    }
 
     if (!submit) {
         return (
             <div>
                 <Logo />
-                <AddPlayers onSubmit={ onSubmitPlayers } onRemoval={ onPlayerRemoval }/>
+                <AddPlayers onSubmit={ onSubmitPlayers } onRemoval={ onPlayerRemoval } returningPlayers={ finalPlayers }/>
                 <AddTeams onSubmit={ onSubmitTeams }/>
                 <button className="submit-btn"
                         onClick={() => {
@@ -34,7 +39,7 @@ function App() {
                                 setSubmit(true);
                             } else {
                                 alert('Minimum required players is 2');
-                            } // TODO: maybe add a if condition where no. of teams < players 
+                            }
                         }}>Submit</button>
                 <Footer />
             </div>
@@ -43,7 +48,7 @@ function App() {
         return (
             <div>
                 <Logo />
-                <DisplayTeams players={ finalPlayers } teams={ finalTeams }/>
+                <DisplayTeams players={ finalPlayers } teams={ finalTeams } handleGoBack={ handleGoBack }/>
                 <Footer />
             </div>
         )

@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 
 function AddPlayers(props) {
-    const [players, setPlayers] = useState([]);
+    const [players, setPlayers] = useState(() => {
+        if (props.returningPlayers.length > 1) {
+            return props.returningPlayers;
+        } else {
+            return [];
+        }
+    });
 
     function addPlayer(newPlayer) {
         if (!players.includes(newPlayer) && newPlayer !== '' && newPlayer.length <= 10 && players.length < 128) {
