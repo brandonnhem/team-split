@@ -11,13 +11,12 @@ footer {
     color: white;
 }
 
-
-/* TODO: center align logo */
 .logo {
     font-family: 'Zen Dots', cursive;
     color: white;
-    margin: 0 15%;
     font-size: 2rem;
+    text-align: center;
+    display: inline-block;
 }
 
 .center {
