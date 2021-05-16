@@ -153,3 +153,39 @@ a:visited {
 .team-list {
     columns: 2 auto;
 }
+
+@media (min-width: 641px) {
+    .logo {
+        margin: 0 25%;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    input {
+        font-size: 2rem;
+        margin-top: 0%;
+    }
+
+    .player-card {
+        padding: 10%;
+        margin: 5%;
+        font-size: 1.5rem;
+    }
+
+    .add-btn {
+        width: 20%;
+        height: 80%;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
