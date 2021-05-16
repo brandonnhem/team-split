@@ -24,13 +24,14 @@ function DisplayTeams(props) {
         setTeams(tempTeams);
     }
 
-
-    // TODO: keep names on refresh so you don't have to add everyone again
     return (
         <div className="card center team-list">
             <h2>Final Team List</h2>
-            <button className="shuffle-btn" onClick={() => shuffleTeams()}>Shuffle</button>
-            {chunkTeams.map((value, index) => {
+            <div>
+                <button className="back-btn" onClick={() => props.handleGoBack({submit: false, prevTeams: props.players})}>Go Back</button>
+                <button className="shuffle-btn" onClick={() => shuffleTeams()}>Shuffle</button>
+            </div>
+            {teams.map((value, index) => {
                 return <div key={ index } className="card">
                     <h3>Team #{index + 1}</h3>
                     {value.map((player, idx) => {
