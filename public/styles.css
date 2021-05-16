@@ -109,7 +109,7 @@ input:focus {
 
 .modify-btn {
     width: 25%;
-    height: 100%;
+    height: 40px;
     padding: 0;
     margin: 5%;
     background-color: #6e6dbb;
@@ -274,6 +274,8 @@ a:visited {
 
     .modify-btn {
         font-size: 3rem;
+        height: 70%;
+        width: 15%;
     }
 
     .submit-btn {
