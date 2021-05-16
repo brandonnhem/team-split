@@ -189,3 +189,65 @@ a:visited {
         font-size: 1.2rem;
     }
 }
+
+@media (min-width: 1000px) {
+    .logo {
+        margin: 0 25%;
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .card {
+        padding: 5% 10%;
+        margin-bottom: 10%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    input {
+        font-size: 2.5rem;
+        margin-top: 0%;
+        width: 78%;
+    }
+
+    .quantity {
+        font-size: 4rem;
+    }
+
+    .player-card {
+        padding: 10%;
+        margin: 5%;
+        font-size: 2.5rem;
+    }
+
+    .add-btn {
+        width: 15%;
+        height: 100%;
+        font-size: 3rem;
+        border-radius: 6%;
+        border: solid 3px;
+    }
+
+    .modify-btn {
+        font-size: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 3rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+
+    .team-list {
+        background-color: rgb(241, 241, 241);
+    }
+}
