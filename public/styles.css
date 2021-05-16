@@ -84,6 +84,10 @@ input:focus {
     outline: none;
 }
 
+::placeholder {
+    color:rgb(247, 221, 255);
+}
+
 .add-btn {
     padding: 0;
     width: 15%;
