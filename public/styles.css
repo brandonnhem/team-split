@@ -156,7 +156,6 @@ a:visited {
 }
 
 .shuffle-btn {
-    background-color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -171,7 +170,6 @@ a:visited {
 
 @media (min-width: 641px) {
     .logo {
-        margin: 0 25%;
         font-size: 2.5rem;
     }
 
@@ -200,6 +198,11 @@ a:visited {
         height: 80%;
     }
 
+    .shuffle-btn {
+        width: 50%;
+        font-size: 2rem;
+    }
+
     footer {
         font-size: 1.2rem;
     }
@@ -207,7 +210,6 @@ a:visited {
 
 @media (min-width: 1000px) {
     .logo {
-        margin: 0 25%;
         font-size: 3rem;
         width: 100%;
     }
@@ -256,6 +258,11 @@ a:visited {
 
     .submit-btn {
         font-size: 3rem;
+    }
+
+    .shuffle-btn {
+        width: 50%;
+        font-size: 3.5rem;
     }
 
     footer {
