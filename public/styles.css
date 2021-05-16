@@ -272,4 +272,8 @@ a:visited {
     .team-list {
         background-color: rgb(241, 241, 241);
     }
+
+    p {
+        font-size: 2rem;
+    }
 }
